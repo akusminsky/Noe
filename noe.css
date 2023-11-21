@@ -374,7 +374,7 @@ responsive grid
 
     .b {
         margin: 35px;
-        grid-area: 7 / 1 / span 4 / span 2;
+        grid-area: 6 / 1 / span 4 / span 2;
         border: 8px solid white;
         padding: 0px;
         
@@ -382,7 +382,7 @@ responsive grid
 
     .f {
         display: block;
-        grid-area: 1 / 1 / span 6 / span 2;
+        grid-area: 1 / 1 / span 5 / span 2;
     }
 
     .footer {
