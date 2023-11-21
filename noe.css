@@ -94,11 +94,15 @@ nav li:hover {
         display: block;
         cursor: pointer;
     }
+
+    header {
+        background-color: orange;
+    }
 }
 
 #mobileNav {
     width: 100%;
-    height: 500px;
+    height: 100vh;
 }
 
 #mobileNav li {
@@ -110,17 +114,12 @@ nav li:hover {
     margin: 30px auto;
     padding: 10px;
     transition: transform 0.3s ease;
-    background-color: orange;
 }
 
 @media (max-width: 420px) {
     #logo {
         font-size: 1.5rem;
     }
-    header {
-        background-color: orange;
-    }
-
 }
 
 
@@ -208,7 +207,11 @@ grid chapter
     animation: fadeIn 800ms ease-in forwards;
 }
 
-#dynamic-image {
+#dynamic-image1,
+#dynamic-image2,
+#dynamic-image3,
+#dynamic-image4
+ {
     transition: opacity 1000ms ease-in-out;
     opacity: 0;
 }
@@ -369,17 +372,28 @@ responsive grid
     .grid {
         display: grid;
         height: 100%;
-        grid-template-rows: repeat(10, 90px);
+        grid-template-rows: repeat(8, 90px);
     }
 
     .b {
-        margin: 35px;
-        grid-area: 7 / 1 / span 4 / span 2;
-        border: 8px solid white;
+        margin: 0 35px;
+        grid-area: 4 / 1 / span 3 / span 2;
+        border: none;
         padding: 0px;
-        
+        overflow: hidden;
     }
 
+    .c {
+        display: block;
+        margin: 0 35px;
+        grid-area: 1 / 1 / span 3 / span 2;
+        border: none;
+        padding: 0px;
+        overflow: hidden;
+    }
+
+
+    /*TO DO: hacer que f sea un overlay the .b y de otra caja con imagen rotativa. darle span de 3 a las dos cajas para cubrir todo f */
     .f {
         display: block;
         grid-area: 1 / 1 / span 6 / span 2;
