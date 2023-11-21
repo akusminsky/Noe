@@ -369,12 +369,12 @@ responsive grid
     .grid {
         display: grid;
         height: 100%;
-        grid-template-rows: repeat(10, 100px);
+        grid-template-rows: repeat(10, 90px);
     }
 
     .b {
         margin: 35px;
-        grid-area: 6 / 1 / span 4 / span 2;
+        grid-area: 7 / 1 / span 4 / span 2;
         border: 8px solid white;
         padding: 0px;
         
@@ -382,7 +382,7 @@ responsive grid
 
     .f {
         display: block;
-        grid-area: 1 / 1 / span 5 / span 2;
+        grid-area: 1 / 1 / span 6 / span 2;
     }
 
     .footer {
