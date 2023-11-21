@@ -361,7 +361,7 @@ responsive grid
 
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
 
     .grid {
         display: grid;
@@ -370,16 +370,11 @@ responsive grid
     }
 
     .b {
-        margin: 22px;
+        margin: 35px;
         grid-area: 7 / 1 / span 4 / span 2;
         border: 8px solid white;
         padding: 0px;
         
-    }
-
-    .b img {
-        object-fit: cover;
-        object-position: center;
     }
 
     .f {
