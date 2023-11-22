@@ -7,10 +7,14 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: hsl(300, 51%, 19% 0.8);;
     color: white;
     z-index: 9999;
     margin: 0;
+    transition: background-color 0.3s;
+}
+
+body{
+    background-color: hsl(300, 51%, 19%);
 }
 
 .hcontainer {
@@ -65,7 +69,7 @@ a {
 
 #desktopNav li {
     display: inline-block;
-    width: 150px;
+    width: 100px;
     font-size: 15px;
     text-align: center;
     border: 1px solid white;
@@ -85,7 +89,7 @@ nav li:hover {
     background-color: grey;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1100px) {
 
     #desktopNav {
         display: none; 
@@ -93,10 +97,6 @@ nav li:hover {
     #menu-toggle {
         display: block;
         cursor: pointer;
-    }
-
-    header {
-        background-color: hsl(300, 51%, 19%);;
     }
 }
 
@@ -301,6 +301,7 @@ responsive grid
 */
 
 @media (max-width: 1150px) {
+
     .grid {
         width: 100%;
         display: grid;
@@ -324,10 +325,6 @@ responsive grid
 }
 
 @media (max-width: 550px) {
-
-    body{
-        background-color: hsl(300, 51%, 19%);;
-    }
 
     h2 {
         font-size: 1.5rem;
@@ -399,7 +396,6 @@ responsive grid
         display: block;
         grid-area: 1 / 1 / span 6 / span 2;
         z-index: 888;
-        background-color: ;
     }
 
     .footer {
