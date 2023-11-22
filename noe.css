@@ -216,6 +216,7 @@ grid chapter
     color: white;
     background-color: hsla(0, 0%, 0%, 0.6);
     border: 5px solid white;
+    padding: 30px;
     animation: fadeIn 800ms ease-in forwards;
 }
 
@@ -336,7 +337,7 @@ responsive grid
 
 }
 
-@media (max-width: 550px) and (min-width: 480px) {
+@media (max-width: 550px) and (min-width: 481px) {
 
     h2 {
         font-size: 1.5rem;
@@ -376,7 +377,7 @@ responsive grid
         margin: 0 0px; /*volver a 35px*/
         padding: 10px;
         grid-area: 1 / 1 / 5 / 3;
-        border: 8px solid white;
+        border: 8px solid rgba(255, 255, 255, 0.438);
     }
 
 }
@@ -430,6 +431,7 @@ responsive grid
     .f {
         display: block;
         grid-area: 1 / 1 / span 6 / span 2;
+        padding: 0px;
         z-index: 888;
         border: 2px solid rgba(255, 255, 255, 0.306);
        
@@ -439,7 +441,7 @@ responsive grid
     .h,
     .i,
     .j {
-        padding: 4px;
+        padding: 4px 4px 2px 4px;
         border: 2px solid rgba(255, 255, 255, 0.306);
     }
 
