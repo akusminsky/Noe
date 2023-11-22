@@ -5,6 +5,7 @@ const minWidth = 1300;
 menuButton.addEventListener('click', function() {
     if (mobileNav.style.display === 'none') {
         mobileNav.style.display = 'block';
+
         }
     else {
         mobileNav.style.display = 'none';
@@ -24,7 +25,7 @@ script for dynamic-images
 */
 
 
-function initializeImageSequence(imgElementId, imageArray, interval = 5000, transitionDelay = 750) {
+function initImageSequence(imgElementId, imageArray, interval = 5000, transitionDelay = 750) {
     const imgElement = document.getElementById(imgElementId);
     let currentIndex = 0;
 
@@ -46,10 +47,10 @@ function initializeImageSequence(imgElementId, imageArray, interval = 5000, tran
 }
 
 const images1 = ['./media/noe.prof2.png', './media/noe.prof3.png'];
-initializeImageSequence('dynamic-image1', images1);
-initializeImageSequence('dynamic-image2', images1, 8000);
-initializeImageSequence('dynamic-image3', images1, 3000);
-initializeImageSequence('dynamic-image4', images1, 6000);
+initImageSequence('dynamic-image1', images1);
+initImageSequence('dynamic-image2', images1, 8000);
+initImageSequence('dynamic-image3', images1, 3000);
+initImageSequence('dynamic-image4', images1, 6000);
 
 
 
