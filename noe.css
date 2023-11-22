@@ -384,8 +384,7 @@ responsive grid
 
 @media (max-width: 480px) {
 
-    .a, 
-    .c, 
+    .a,  
     .d, 
     .e {
         display: none;
