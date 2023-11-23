@@ -392,15 +392,26 @@ responsive grid
 
     .grid {
         display: grid;
-        height: 93vh;
+        height: 85vh;
         grid-template-rows: repeat(4, 1fr);
         margin: 60px auto 0 auto;
         grid-template-columns: 1fr 1fr;
 
     }
 
+
     p {
         font-size: 1.5rem;
+        margin-top: -15px;
+    }
+
+    .box h2, .box p {
+        text-align: center; /* Centers text horizontally */
+    }
+
+    .box p {
+        padding-left: 50px;
+        padding-right: 50px;
     }
 
     /*cajas de imagen*/
@@ -411,6 +422,7 @@ responsive grid
         border: none;
         padding: 0px;
         overflow: hidden;
+        z-index: 776;
     }
 
     .c {
@@ -420,6 +432,7 @@ responsive grid
         border: none;
         padding: 0px;
         overflow: hidden;
+        z-index: 775;
     }
 
     .b img, .c img {
