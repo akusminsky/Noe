@@ -1,3 +1,16 @@
+
+/*Lazy-load*/
+
+window.onload = function() {
+    document.body.style.visibility = 'visible';
+    document.body.style.opacity = '1';
+};
+
+
+
+
+
+/*Toggle Menu*/
 var menuButton = document.getElementById('menu-toggle');
 var mobileNav = document.getElementById('mobileNav');
 const minWidth = 1300;
